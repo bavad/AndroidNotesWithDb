@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/image_cl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_iv"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/description_icon"
+            android:background="@color/background_root_layout_color"/>
+
+        <ImageView
+            android:id="@+id/class_importance_iv"
+            android:layout_width="@dimen/importance_size"
+            android:layout_height="@dimen/importance_size"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_iv"
+            app:layout_constraintRight_toRightOf="@+id/icon_iv"
+            android:contentDescription="@string/description_icon"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/note_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/image_cl">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="@dimen/big_text_size"
+            android:paddingTop="@dimen/dimen10dp"
+            android:paddingEnd="@dimen/dimen5dp"
+            android:paddingStart="@dimen/dimen5dp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/time_tv"/>
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen10dp"
+            android:paddingEnd="@dimen/dimen5dp"
+            android:paddingStart="@dimen/dimen5dp"
+            android:layout_alignParentEnd="true"
+            android:text="@string/splash_time"/>
+
+        <TextView
+            android:id="@+id/text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_tv"
+            android:padding="@dimen/dimen10dp"
+            android:text="@string/splash_note"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/separator_v"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen1dp"
+        android:background="@color/separator_color"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/image_cl"/>
+
+</RelativeLayout>

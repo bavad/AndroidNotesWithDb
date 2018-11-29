@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="notes">Заметки</string>
+    <string name="add">Добавить</string>
+    <string name="search">Поиск</string>
+    <string name="filter">Фильтрация</string>
+    <string name="first_class">Первый класс</string>
+    <string name="second_class">Второй класс</string>
+    <string name="third_class">Третий класс</string>
+    <string name="send">Отправить</string>
+    <string name="error">Ошибка</string>
+    <string name="edit">Редактировать</string>
+    <string name="remove">Удалить</string>
+    <string name="select_picture">Выбор изображения</string>
+    <string name="description_icon">Иконка</string>
+    <string name="title">Заголовок</string>
+    <string name="text">Текст</string>
+    <string name="error_empty_filed">Это поле не может быть пустым</string>
+</resources>
